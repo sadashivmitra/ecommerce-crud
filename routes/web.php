@@ -22,3 +22,7 @@ Route::resource('category','CategoriesController');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/image-processing', 'ImageProcessingController@create');
+Route::post('/image-processing', 'ImageProcessingController@store');
+Route::get('/{image}', 'ImageConImageProcessingControllertroller@show');
